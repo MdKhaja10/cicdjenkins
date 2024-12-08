@@ -1,0 +1,5 @@
+com\TextExecutor\TestRunner.class
+com\StepDefinitions\BestSellerPageDefs.class
+com\StepDefinitions\AddToCartPageDefs.class
+com\StepDefinitions\AmazonLoginPageDefs.class
+com\StepDefinitions\Hooks.class

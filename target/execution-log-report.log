@@ -1,0 +1,40 @@
+Validate zoom in of search productexecution is started
+Validate the BestSeller pageexecution is started
+https://www.amazon.in:/URL Loaded on the browser 
+https://www.amazon.in:/URL Loaded on the browser 
+Samsung S22 Mobiles sending the element [[ChromeDriver: chrome on windows (b0d63c2a1bc2286bbb3bb7fab0410e26)] -> css selector: #twotabsearchtextbox]
+[[ChromeDriver: chrome on windows (b0d63c2a1bc2286bbb3bb7fab0410e26)] -> css selector: #nav-search-submit-button]-webElement clicked
+[[ChromeDriver: chrome on windows (b0d63c2a1bc2286bbb3bb7fab0410e26)] -> css selector: [class*='a-size-mini a-spacing-none']]-webElement clicked
+
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.109)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a01f4ab02643bdacb56ab53109c5d620, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\moham\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51414}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51414/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a01f4ab02643bdacb56ab53109c5d620
+Validate the add to cart of the productexecution is started
+https://www.amazon.in:/URL Loaded on the browser 
+Samsung S22 Mobiles sending the element [[ChromeDriver: chrome on windows (e8cd8272bc27c04f08910eccf9b6c58c)] -> css selector: #twotabsearchtextbox]
+
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.109)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e8cd8272bc27c04f08910eccf9b6c58c, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\moham\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51534}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51534/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e8cd8272bc27c04f08910eccf9b6c58c
+
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.109)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b0d63c2a1bc2286bbb3bb7fab0410e26, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\moham\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51405}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51405/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b0d63c2a1bc2286bbb3bb7fab0410e26

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Project</td>
+        <td>1</td>
+      <td>08 Dec 2024, 15:03</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">com.StepDefinitions.AddToCartPageDefs.click_on_delete_button_from_shopping_cart_page()</td>
+              <td>2</td>
+              <td class="duration" data-value="498700">0.000</td>
+              <td class="duration" data-value="498700">0.000</td>
+              <td class="duration" data-value="997400">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.StepDefinitions.AddToCartPageDefs.click_on_the_add_to_cart_button()</td>
+              <td>2</td>
+              <td class="duration" data-value="622450">0.000</td>
+              <td class="duration" data-value="622450">0.001</td>
+              <td class="duration" data-value="1244900">0.001</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.StepDefinitions.AddToCartPageDefs.click_on_the_cart_button()</td>
+              <td>2</td>
+              <td class="duration" data-value="506750">0.000</td>
+              <td class="duration" data-value="506750">0.001</td>
+              <td class="duration" data-value="1013500">0.001</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.StepDefinitions.AddToCartPageDefs.validate_is_added_to_shopping_cart_page(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1356900">0.001</td>
+              <td class="duration" data-value="1356900">0.001</td>
+              <td class="duration" data-value="1356900">0.001</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.StepDefinitions.AddToCartPageDefs.validate_page_is_displayed(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.StepDefinitions.AmazonLoginPageDefs.click_on_the_searched_product()</td>
+              <td>2</td>
+              <td class="duration" data-value="21961797300">21.961</td>
+              <td class="duration" data-value="21961797300">43.923</td>
+              <td class="duration" data-value="43923594600">43.923</td>
+              <td class="failed">50.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.StepDefinitions.AmazonLoginPageDefs.mouse_hover_the_mouse_to_the_product_to_zoom_in()</td>
+              <td>1</td>
+              <td class="duration" data-value="19709800">0.019</td>
+              <td class="duration" data-value="19709800">0.019</td>
+              <td class="duration" data-value="19709800">0.019</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.StepDefinitions.AmazonLoginPageDefs.navigate_to_amazon_application()</td>
+              <td>3</td>
+              <td class="duration" data-value="1271753133">1.271</td>
+              <td class="duration" data-value="1271753133">1.560</td>
+              <td class="duration" data-value="3815259400">3.815</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.StepDefinitions.AmazonLoginPageDefs.search_for_from_the_search_field(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="1954338100">1.954</td>
+              <td class="duration" data-value="1954338100">3.109</td>
+              <td class="duration" data-value="3908676200">3.908</td>
+              <td class="failed">50.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.StepDefinitions.AmazonLoginPageDefs.validate_the_selected_product_is_zoom()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.StepDefinitions.BestSellerPageDefs.click_on_the_cart_page_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.StepDefinitions.BestSellerPageDefs.click_on_the_electronics()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.StepDefinitions.BestSellerPageDefs.navigate_to_best_seller()</td>
+              <td>1</td>
+              <td class="duration" data-value="19134423000">19.134</td>
+              <td class="duration" data-value="19134423000">19.134</td>
+              <td class="duration" data-value="19134423000">19.134</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.StepDefinitions.BestSellerPageDefs.select_any_product_in_the_electronics_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="1008600">0.001</td>
+              <td class="duration" data-value="1008600">0.001</td>
+              <td class="duration" data-value="1008600">0.001</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.StepDefinitions.BestSellerPageDefs.validate_page_is_displayed(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1207200">0.001</td>
+              <td class="duration" data-value="1207200">0.001</td>
+              <td class="duration" data-value="1207200">0.001</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.StepDefinitions.BestSellerPageDefs.validate_price_of_the_product()</td>
+              <td>1</td>
+              <td class="duration" data-value="2013200">0.002</td>
+              <td class="duration" data-value="2013200">0.002</td>
+              <td class="duration" data-value="2013200">0.002</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.StepDefinitions.BestSellerPageDefs.validate_the_page_is_displayed(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1481600">0.001</td>
+              <td class="duration" data-value="1481600">0.001</td>
+              <td class="duration" data-value="1481600">0.001</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.StepDefinitions.Hooks.setup(io.cucumber.java.Scenario)</td>
+              <td>3</td>
+              <td class="duration" data-value="3198535466">3.198</td>
+              <td class="duration" data-value="3198535466">4.359</td>
+              <td class="duration" data-value="9595606400">9.595</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.StepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)</td>
+              <td>3</td>
+              <td class="duration" data-value="21473066">0.021</td>
+              <td class="duration" data-value="21473066">0.031</td>
+              <td class="duration" data-value="64419200">0.064</td>
+              <td class="failed">0.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>19</td>
+            <td>30</td>
+            <td class="duration">2.682</td>
+            <td class="duration">43.923</td>
+            <td class="duration">1:20.472</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
